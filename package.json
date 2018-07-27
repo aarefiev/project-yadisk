@@ -1,0 +1,80 @@
+{
+  "name": "yadisk-aarefiev",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "hexlet": "dist/bin/hexlet.js"
+  },
+  "engines": {
+    "node": "9.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "babel-node": "babel-node",
+    "flow": "flow",
+    "flow-typed": "flow-typed",
+    "start": "babel-node ./src/bin/slack.js",
+    "eslint": "eslint",
+    "webpack": "webpack",
+    "build-server": "babel server --out-dir dist --source-maps inline",
+    "build-app": "npm run webpack -- -p --env production",
+    "build": "npm run build-app && npm run build-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aarefiev/project-yadisk.git"
+  },
+  "author": "Artem Arefiev",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/node": "*",
+    "@babel/polyfill": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-flow": "*",
+    "@babel/preset-react": "*",
+    "@babel/preset-stage-0": "*",
+    "axios": "*",
+    "babel-loader": "8.0.0-beta.0",
+    "bootstrap": "^4.0.0",
+    "classnames": "*",
+    "css-loader": "*",
+    "dotenv": "^4.0.0",
+    "koa": "*",
+    "koa-bodyparser": "^4.1.0",
+    "koa-generic-session": "*",
+    "koa-logger": "*",
+    "koa-pug": "^3.0.0-2",
+    "koa-router": "next",
+    "koa-static": "^3.0.0",
+    "koa-webpack": "^0.3.1",
+    "lodash": "*",
+    "npm": "^5.7.1",
+    "react": "*",
+    "react-bootstrap": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*",
+    "redux-actions": "*",
+    "redux-bootstrap": "*",
+    "redux-form": "*",
+    "redux-thunk": "*",
+    "style-loader": "*",
+    "webpack": "*"
+  },
+  "devDependencies": {
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-flowtype": "*",
+    "eslint-plugin-import": "*",
+    "flow-bin": "^0.63",
+    "flow-typed": "*"
+  }
+}
